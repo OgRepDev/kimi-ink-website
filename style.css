@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ebebeb;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.main {
+    width: 100%;
+    padding: 2% 5%;
+    height: 100vh;
+}
+
+.fsector {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.fsector__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 0 1 auto;
+}
+
+.fsector__nav--logo {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.fsector__nav--logo--name {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.fsector__nav--list {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fsector__nav--list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.fsector__nav--list ul li {
+    margin-left: 50px;
+}
+
+.fsector__nav--list ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.fsector__nav--language {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+
+/* -------------------- fSector Content ------------------ */
+.fsector__content {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+
+
+.fsector__content--left {
+    flex-grow: 1;
+}
+
+.fsector__content--middle {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+}
+
+.fsector__content--middle-text {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 4rem;
+    text-align: left;
+    font-weight: 700;
+}
+
+.fsector__content--middle-text span {
+    font-family: 'Kalam', cursive;
+}
+
+.fsector__content--middle-text button {
+    padding: 3% 8%;
+    margin-top: 20px;
+    border: 2px solid black;
+    background-color: transparent;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.fsector__content--middle-img {
+    width: 50%;
+    height: 100%;
+}
+
+.fsector__content--middle-img-img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.fsector__content--middle-img-img img{
+    position: absolute;
+    object-fit: contain;
+    height: auto;
+    max-width: 100%;
+    transform: scale(1.6);
+    z-index: -1;
+}
+
+.fsector__content--right {
+    flex-grow: 1;
+}
+
+
+
+.fsector__slides {
+    flex: 0 1 40px;
+}
